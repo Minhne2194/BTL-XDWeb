@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cửa Hàng Giày 2hands</title>
+    <style>
+#search-bar {
+    /* Điều chỉnh vị trí và padding của thanh tìm kiếm nếu cần */
+    max-width: 100px; /* Thiết lập chiều rộng tối đa */
+    margin: auto; /* Căn giữa thanh tìm kiếm */
+    padding: 10px;
+}
+
+#search-bar form {
+    display: flex; /* Sử dụng flexbox để căn chỉnh input và button */
+}
+
+#search-query {
+    flex: 1; /* Cho input chiếm đủ không gian */
+    border: 1px solid #cccccc; /* Viền màu sáng, nhẹ nhàng */
+    padding: 5px 10px; /* Padding hợp lý cho input text */
+    border-radius: 5px; /* Góc bo tròn cho input */
+    margin-right: 10px; /* Khoảng cách giữa input và button */
+}
+
+#search-submit {
+    background-color: transparent; /* Nền trong suốt */
+    border: none; /* Loại bỏ viền */
+    padding: 5px; /* Padding cho nút */
+    cursor: pointer; /* Cursor nhấn chuột */
+}
+
+#search-submit img {
+    width: 24px; /* Kích thước icon phù hợp */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+}
+
+@media screen and (max-width: 100px) {
+    #search-bar form {
+        flex-direction: column; /* Xếp chồng lên nhau khi màn hình nhỏ */
+    }
+
+    #search-query {
+        margin-bottom: 10px; /* Khoảng cách khi chuyển sang column */
+    }
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;  /* Loại bỏ các dấu bullet mặc định */
+    display: flex;     /* Tạo flex container */
+    align-items: center; /* Căn giữa các items theo chiều dọc */
+    justify-content: center; /* Nếu bạn muốn căn giữa các items theo chiều ngang */
+}
+
+nav li {
+    margin-right: 20px; /* Tạo khoảng cách giữa các menu item */
+}
+
+nav li:last-child {
+    margin-right: 0; /* Hủy bỏ khoảng cách bên phải của item cuối cùng */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Màu sắc cho liên kết. Nên thay đổi theo yêu cầu thiết kế của bạn */
+}
+
+/* Thêm hiệu ứng khi hover vào link để tăng tính tương tác */
+nav a:hover {
+    color: #017bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
+        .header{
+    display: flex;
+    justify-content: space-evenly;
+    color: #e9dfdf;
+    background-color: rgb(225, 225, 238);
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+}
+        .container{
+    display: flex;
+    justify-content: space-evenly;
+    color: #e9dfdf;
+    background-color: rgb(225, 225, 238);
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+}
+#logo-web img {
+    max-width: 100px;  /* Hoặc kích thước tối đa bạn muốn */
+    max-height: 100px; /* Đảm bảo tỷ lệ ảnh vẫn được giữ nguyên */
+    width: auto;       /* Hoặc bạn có thể thiết lập % để nó đáp ứng với div */
+    height: auto;      /* Sẽ tự điều chỉnh theo width để giữ tỷ lệ */
+}
+#search-bar img{
+    max-width: 100px;  /* Hoặc kích thước tối đa bạn muốn */
+    max-height: 100px; /* Đảm bảo tỷ lệ ảnh vẫn được giữ nguyên */
+    width: 10px;       /* Hoặc bạn có thể thiết lập % để nó đáp ứng với div */
+    height: auto;      /* Sẽ tự điều chỉnh theo width để giữ tỷ lệ */
+}
+#cart img{
+    max-width: 50px;  /* Hoặc kích thước tối đa bạn muốn */
+    max-height: 100px; /* Đảm bảo tỷ lệ ảnh vẫn được giữ nguyên */
+    width: 20px;       /* Hoặc bạn có thể thiết lập % để nó đáp ứng với div */
+    height: auto;      /* Sẽ tự điều chỉnh theo width để giữ tỷ lệ */
+}
+#cart a {
+            color: #333; /* Màu của liên kết */
+            text-decoration: none; /* Không gạch chân */
+        }
+
+        #cart a:hover {
+            color: #017bff; /* Màu của liên kết khi hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div id="logo-web">
+                <img src="https://sgweb.vn/wp-content/uploads/2022/12/thiet-ke-logo-shop-giay-18_1584095086.jpg" alt>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div id="search-bar">
+                <form action="/search" method="get">
+                    <input type="text" name="query" id="search-query" placeholder="Tìm kiếm giày, ví dụ: Nike Air Max" aria-label="Search">
+                    <button type="submit" id="search-submit"><img id="search-icon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png" alt="Tìm kiếm" /></button>
+                </form>
+            </div>
+            <div id="cart">
+                <a href="cart.html"><img src="https://cdn.pixabay.com/photo/2013/07/12/14/53/cart-148964_1280.png" alt="" />Giỏ hàng</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner"></div>
+
+</body>
+</html>
+
