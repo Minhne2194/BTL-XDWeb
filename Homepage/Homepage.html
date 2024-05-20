@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Cửa Hàng Giày 2hands</title>
     <style>
+/* Thiết lập cho header */
 #search-bar {
     /* Điều chỉnh vị trí và padding của thanh tìm kiếm nếu cần */
     max-width: 100px; /* Thiết lập chiều rộng tối đa */
@@ -115,6 +116,68 @@ nav a:hover {
         #cart a:hover {
             color: #017bff; /* Màu của liên kết khi hover */
         }
+/* Cấu hình bố cục cho banner */
+.body-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+        .banner {
+    background: url('https://example.com/banner-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.banner h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+/* Thiết kế cho từng sản phẩm */
+.sp, .sp-c {
+    width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sử dụng box-shadow để tạo độ phân cách giữa các sản phẩm */
+    text-align: center;
+}
+
+.sp img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Đảm bảo ảnh không có khoảng cách phía dưới */
+}
+
+.button-add {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-add button {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+.button-add button:hover {
+    background-color: #555;
+}
+
+.name {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gia {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
     </style>
 </head>
 <body>
@@ -125,7 +188,7 @@ nav a:hover {
             </div>
             <nav>
                 <ul>
-                    <li class="current"><a href="index.html">Trang Chủ</a></li>
+                    <li class="current"><a href="C:\Users\Admin\Documents\GitHub\BTL-XDWeb\Homepage\Homepage.html">Trang Chủ</a></li>
                     <li><a href="products.html">Sản Phẩm</a></li>
                     <li><a href="contact.html">Liên Hệ</a></li>
                 </ul>
@@ -141,8 +204,103 @@ nav a:hover {
             </div>
         </div>
     </div>
-    <div class="banner"></div>
-
+    <div class="banner">
+        <div>
+            <h2>Các sản phẩm</h2>
+        </div>
+        <div class = "body-banner">
+            <div class="sp">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
+                <div class="button-add">
+                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <div class="sp-c">
+                        <h3 class="name">
+                            Adidas Samba OG Black Wonder White IE5836
+                        </h3>
+                </div>
+                <div>	
+                    <p class="gia">2,680,000₫</p>
+                </div>
+            </div>
+            <div class="sp">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
+                <div class="button-add">
+                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <div class="sp-c">
+                        <h3 class="name">
+                            Adidas Samba OG Black Wonder White IE5836
+                        </h3>
+                </div>
+                <div>	
+                    <p class="gia">2,680,000₫</p>
+                </div>
+            </div>
+            <div class="sp">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
+                <div class="button-add">
+                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <div class="sp-c">
+                        <h3 class="name">
+                            Adidas Samba OG Black Wonder White IE5836
+                        </h3>
+                </div>
+                <div>	
+                    <p class="gia">2,680,000₫</p>
+                </div>
+            </div>
+            <div class="sp">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
+                <div class="button-add">
+                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <div class="sp-c">
+                        <h3 class="name">
+                            Adidas Samba OG Black Wonder White IE5836
+                        </h3>
+                </div>
+                <div>	
+                    <p class="gia">2,680,000₫</p>
+                </div>
+            </div>
+            <div class="sp">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
+                <div class="button-add">
+                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <div class="sp-c">
+                        <h3 class="name">
+                            Adidas Samba OG Black Wonder White IE5836
+                        </h3>
+                </div>
+                <div>	
+                    <p class="gia">2,680,000₫</p>
+                </div>
+            </div>
+            <div class="sp">
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
+                <div class="button-add">
+                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <div class="sp-c">
+                        <h3 class="name">
+                            Adidas Samba OG Black Wonder White IE5836
+                        </h3>
+                </div>
+                <div>	
+                    <p class="gia">2,680,000₫</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
