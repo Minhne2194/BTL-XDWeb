@@ -1,0 +1,53 @@
+.loginform{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/top-view-sneakers-white-background-fitness-wear-equipment-sport-fashion-sport-accessories-sport-equipment-healthy-concept-copy-space-concept-healthy-lifestyle-sport-diet-sport-equipment_1391-724.jpg?w=900&t=st=1716264739~exp=1716265339~hmac=73d6072d496740e60b5800f495217ac548f52e6e5400155bb19f75c381ad22b8);
+    background-size: cover;
+    background-position: center;
+}
+
+.loginform .left img{
+    width: 700px;
+}
+
+.loginform .right{
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+}
+
+.loginform .right h1{
+    font-family: ???;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.loginform .right p{
+    margin-bottom: 5px;
+}
+
+.loginform .right .user{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.loginform .right .user i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: blueviolet;
+}
+
+.loginform .right .user .username{
+    position: relative;
+    left: 9px;
+    width: 295px;
+    background: none;
+}
