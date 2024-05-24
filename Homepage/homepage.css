@@ -13,7 +13,7 @@
 #search-query {
     flex: 1; /* Cho input chiếm đủ không gian */
     border: 1px solid #cccccc; /* Viền màu sáng, nhẹ nhàng */
-    padding: 5px 10px; /* Padding hợp lý cho input text */
+    padding: 5px 15px; /* Padding hợp lý cho input text */
     border-radius: 5px; /* Góc bo tròn cho input */
     margin-right: 10px; /* Khoảng cách giữa input và button */
 }
@@ -129,7 +129,13 @@ nav a:hover {
     margin-bottom: 30px;
 }
 /* Thiết kế cho từng sản phẩm */
-.sp, .sp-c {
+.sp {
+    width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sử dụng box-shadow để tạo độ phân cách giữa các sản phẩm */
+    text-align: center;
+}
+.sp-c {
     width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sử dụng box-shadow để tạo độ phân cách giữa các sản phẩm */
