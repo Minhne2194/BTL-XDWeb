@@ -132,13 +132,11 @@ nav a:hover {
 .sp {
     width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
     margin: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sử dụng box-shadow để tạo độ phân cách giữa các sản phẩm */
     text-align: center;
 }
 .sp-c {
     width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
     margin: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sử dụng box-shadow để tạo độ phân cách giữa các sản phẩm */
     text-align: center;
 }
 
@@ -177,4 +175,62 @@ nav a:hover {
 .gia {
     font-size: 1.2em;
     color: #e74c3c;
+}
+/* CSS cho phần footer của bạn */
+footer {
+    background-color: #f3f3f3; /* Màu nền cho footer */
+    padding: 20px; /* Đệm xung quanh nội dung trong footer */
+    font-family: Arial, sans-serif; /* Font chữ sử dụng */
+}
+
+.main-footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Căn các mục trong footer ra hai bên */
+    flex-wrap: wrap; /* Tự động chuyển hàng nếu không đủ chỗ */
+}
+
+.gioi-thieu, .Ttlh {
+    flex-basis: 48%; /* Chiếm khoảng 48% chiều rộng của phần tổng, giúp có khoảng trắng giữa các mục */
+}
+
+.gioi-thieu h4, .Ttlh h4 {
+    color: #333; /* Màu cho tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+.gioi-thieu p, .Ttlh ul {
+    color: #666; /* Màu cho nội dung */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+}
+
+.Ttlh ul {
+    list-style: none; /* Bỏ bullets của list */
+    padding: 0; /* Reset đệm */
+}
+
+.Ttlh ul li {
+    margin-bottom: 5px; /* Khoảng cách giữa các liên kết */
+}
+
+.main-footer--border {
+    border-top: 1px solid #ddd; /* Tạo đường kẻ phân cách */
+    text-align: center; /* Căn giữa nội dung */
+    margin-top: 20px; /* Khoảng cách từ nội dung phía trên */
+    padding-top: 10px; /* Đệm phía trên cho đoạn text */
+}
+
+.main-footer--border a {
+    color: #333; /* Màu cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.main-footer--border a:hover {
+    color: #007bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
+.Ttlh a {
+    color: #333; /* Màu cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+.Ttlh a:hover {
+    color: #007bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
 }
