@@ -50,6 +50,7 @@ nav ul {
 }
 
 nav li {
+    font-size: 16px;
     margin-right: 20px; /* Tạo khoảng cách giữa các menu item */
 }
 
@@ -132,10 +133,10 @@ nav a:hover {
 .sp {
     width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
     margin: 5px;
+    max-height: fit-content;
     text-align: center;
 }
 .sp-c {
-    width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
     margin: 20px;
     text-align: center;
 }
@@ -233,4 +234,8 @@ footer {
 }
 .Ttlh a:hover {
     color: #007bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
+.name h3 {
+    font-size:16px;
+    font-display:auto;
 }
