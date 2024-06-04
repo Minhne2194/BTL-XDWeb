@@ -177,7 +177,11 @@ nav a:hover {
     font-size: 1.2em;
     color: #e74c3c;
 }
+<<<<<<< Updated upstream
 /* CSS cho phần footer của bạn */
+=======
+
+>>>>>>> Stashed changes
 footer {
     background-color: #f3f3f3; /* Màu nền cho footer */
     padding: 20px; /* Đệm xung quanh nội dung trong footer */

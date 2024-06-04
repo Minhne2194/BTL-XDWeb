@@ -1,0 +1,9 @@
+nav a {
+    text-decoration: none;
+    color: #333; /* Màu sắc cho liên kết. Nên thay đổi theo yêu cầu thiết kế của bạn */
+}
+
+/* Thêm hiệu ứng khi hover vào link để tăng tính tương tác */
+nav a:hover {
+    color: #017bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
