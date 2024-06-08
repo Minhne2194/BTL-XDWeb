@@ -1,4 +1,4 @@
-.loginform{
+.loginform {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -9,45 +9,76 @@
     background-position: center;
 }
 
-.loginform .left img{
-    width: 700px;
+.loginform .left img {
+    width: 700px; /* Có thể cần điều chỉnh tùy kích thước thực tê của hình ảnh và thiết kế mong muốn */
 }
 
-.loginform .right{
+.loginform .right {
     position: relative;
     top: -50px;
-    left: -60px;
+    left: -60px; /* Điều chỉnh vị trí theo mong muốn của bạn */
     padding: 50px 80px;
+    background: white; /* Thêm nền trắng cho khả năng đọc cao hơn (Thay đổi tùy màu sắc của hình phông) */
+    border-radius: 8px; /* Thêm border radius cho viền mượt mà */
 }
 
-.loginform .right h1{
-    font-family: ???;
+.loginform .right h1 {
+    font-family: 'Arial, sans-serif'; /* Bạn cần thay thế Arial bằng font-family mà bạn muốn sử dụng */
     font-size: 45px;
     margin-bottom: 40px;
 }
 
-.loginform .right p{
+.loginform .right p {
     margin-bottom: 5px;
 }
 
-.loginform .right .user{
+.loginform .right .user,
+.loginform .right .password {
     border: 2px solid black;
     border-radius: 5px;
     width: 350px;
     height: 40px;
     display: flex;
+    align-items: center; /* Căn chỉnh vertical cho icon và input */
+    padding-left: 15px; /* Thêm padding bên trái để icon không bám sát vào cạnh */
 }
 
-.loginform .right .user i{
-    position: relative;
-    top: 9px;
-    left: 15px;
+.loginform .right .user i,
+.loginform .right .password i {
     color: blueviolet;
 }
 
-.loginform .right .user .username{
-    position: relative;
-    left: 9px;
-    width: 295px;
+.loginform .right input[type="text"],
+.loginform .right input[type="password"] {
+    border: none; /* Loại bỏ border */
+    outline: none; /* Loại bỏ outline khi focus */
+    width: 100%; /* Sử dụng toàn bộ chiều rộng còn lại */
+    margin-left: 10px; /* Thêm khoảng cách giữa icon và input */
     background: none;
+    font-size: 16px; /* Điều chỉnh kích thước font cho dễ đọc */
+}
+
+/* Loại bỏ style mặc định của button và thêm kích thước, màu sắc */
+.loginform .right button[type="submit"] {
+    background-color: blueviolet; /* Thay đổi màu sắc tùy theo thiết kế của bạn */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; /* Phông chữ to hơn */
+    border-radius: 5px; /* Viền tròn */
+    margin-top: 15px; /* Thêm khoảng trống ở phía trên */
+}
+
+/* Tăng kích thước và thêm padding cho icons login */
+.loginform .right .Login_Icons a {
+    margin-right: 10px; /* Thêm khoảng cách giữa các icon */
+    display: inline-block;
+    background-color: lightgray; /* Màu nền cho icon */
+    padding: 5px; /* Khoảng cách giữa biên của icon và nội dung */
+    border-radius: 50%; /* Làm tròn icon */
+}
+
+.loginform .right .Login_Icons i {
+    color: blueviolet; /* Màu cho icons */
 }

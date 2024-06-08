@@ -8,17 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="img\favicon-32x32.png">
-    <style>
-        #main {
-            display: flex;
-        }
-        #main-spt {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-    </style>
+    <link rel="shortcut icon" href="img\favicon.png"> <!-- Favicon -->
 </head>
 <body>
     <div class="header">
@@ -49,59 +39,47 @@
         <a href="Homepage.html" alt >Trang Chủ</a> / <a href="spt.html">Trang sản phẩm</a>
     </nav>
     <div id = "main">
-    <div id = "loc">
-        <div id = "Thuong hieu">
-            <span>Thuong hieu</span>
+        <div id="loc">
+            <div id="thuong-hieu">
+                <span>Thương hiệu</span>
+                <ul>
+                    <li><input type="checkbox" id="nike" name="brand" value="Nike"><label for="nike">Nike</label></li>
+                    <li><input type="checkbox" id="adidas" name="brand" value="Adidas"><label for="adidas">Adidas</label></li>
+                    <li><input type="checkbox" id="mlb" name="brand" value="MLB"><label for="mlb">MLB</label></li>
+                    <li><input type="checkbox" id="puma" name="brand" value="Puma"><label for="puma">PUMA</label></li>
+                    <li><input type="checkbox" id="newbalance" name="brand" value="New Balance"><label for="newbalance">NEW BALANCE</label></li>
+                </ul>
+            </div>
+            <div id="gia-san-pham">
+                <span>Giá sản phẩm</span>
+                <ul>
+                    <li><input type="checkbox" id="duoi-1tr" name="price" value="Duoi 1tr"><label for="duoi-1tr">Dưới 1.000.000₫</label></li>
+                    <li><input type="checkbox" id="1tr-2tr" name="price" value="1tr-2tr"><label for="1tr-2tr">1.000.000₫-2.000.000₫</label></li>
+                    <li><input type="checkbox" id="2tr-3.5tr" name="price" value="2tr-3.5tr"><label for="2tr-3.5tr">2.000.000₫-3.500.000₫</label></li>
+                    <li><input type="checkbox" id="3.5tr-5tr" name="price" value="3.5tr-5tr"><label for="3.5tr-5tr">3.500.000₫-5.000.000₫</label></li>
+                    <li><input type="checkbox" id="tren-5tr" name="price" value="Tren 5tr"><label for="tren-5tr">Trên 5.000.000₫</label></li>
+                </ul>
+            </div>
+            <div id="kich-thuoc">
+                <span>Kích thước</span>
+                <ul>
+                    <li><input type="checkbox" id="size35" name="size" value="35"><label for="size35">35</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="36"><label for="size36">36</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="37"><label for="size37">37</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="38"><label for="size38">38</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="39"><label for="size39">39</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="40"><label for="size40">40</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="41"><label for="size41">41</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="42"><label for="size42">42</label></li>
+                    
+                </ul>
+            </div>
+            <div id="filter-actions">
+                <button type="button" id="reset-button">Xóa lựa chọn</button>
+                <button type="button" id="filter-button">Xác nhận lọc</button>
+            </div>
+            
         </div>
-        <div id = "cth">
-            <ul>
-                <li>Nike</li>
-                <li>Adidas</li>
-                <li>MLB</li>
-                <li>PUMA</li>
-                <li>NEW BALANCE</li>
-            </ul>
-        </div>
-        <div id = "gia">
-            <span>Gia san pham</span>
-        </div>
-        <div id = "gia-spt">
-            <ul>
-                <li>Duoi 1.000.000&#8363;</li>
-                <li>1.000.000&#8363;-2.000.000&#8363;</li>
-                <li>2.000.000&#8363;-3.500.000&#8363;</li>
-                <li>3.500.000&#8363;-5.000.000&#8363;</li>
-                <li>Tren 5.000.000&#8363;</li>
-            </ul>
-        </div>
-        <div id = "gia">
-            <span>Gia san pham</span>
-        </div>
-        <div id = "gia-spt">
-            <ul>
-                <li>Duoi 1.000.000&#8363;</li>
-                <li>1.000.000&#8363;-2.000.000&#8363;</li>
-                <li>2.000.000&#8363;-3.500.000&#8363;</li>
-                <li>3.500.000&#8363;-5.000.000&#8363;</li>
-                <li>Tren 5.000.000&#8363;</li>
-            </ul>
-        </div>
-        <div id = "kc">
-            <span>Kich thuoc</span>
-        </div>
-        <div id = "kc-spt">
-            <ul>
-                <li>35</li>
-                <li>36</li>
-                <li>37</li>
-                <li>38</li>
-                <li>39</li>
-                <li>40</li>
-                <li>41</li>
-                <li>42</li>
-            </ul>
-        </div>
-    </div>
     <div class="banner">
         <div>
             <h2>Các sản phẩm</h2>
