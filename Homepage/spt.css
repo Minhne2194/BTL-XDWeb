@@ -1,9 +1,89 @@
-nav a {
-    text-decoration: none;
-    color: #333; /* Màu sắc cho liên kết. Nên thay đổi theo yêu cầu thiết kế của bạn */
+#main {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Thêm hiệu ứng khi hover vào link để tăng tính tương tác */
-nav a:hover {
-    color: #017bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+#main-spt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#loc {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 14px; /* Giảm kích thước font chung */
+}
+
+#loc div {
+    margin-bottom: 15px;
+}
+
+#loc span {
+    font-size: 16px; /* Giảm kích thước font của tiêu đề */
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+#loc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Giảm margin */
+}
+
+#loc li {
+    background-color: #f0f0f0;
+    margin: 3px 0; /* Giảm margin */
+    padding: 6px; /* Giảm padding */
+    border-radius: 4px;
+}
+
+#loc li:hover {
+    background-color: #e0e0e0;
+}
+
+#loc label, #loc input[type="checkbox"]+label, #loc input[type="radio"]+label {
+    cursor: pointer;
+}
+
+#loc input[type="checkbox"]:checked+label, #loc input[type="radio"]:checked+label {
+    color: #007BFF; /* Màu xanh dương cho text khi chọn */
+    font-weight: bold; /* Làm đậm chữ */
+}
+
+#filter-actions {
+    text-align: center; /* Căn giữa các nút */
+    padding-top: 15px; /* Giảm padding-top */
+    display: flex;
+    justify-content: center; /* Đảm bảo các nút được căn giữa */
+    gap: 10px; /* Thêm khoảng cách giữa các nút */
+}
+
+button {
+    padding: 8px 12px; /* Giảm padding */
+    font-size: 14px; /* Giảm kích thước font */
+    margin: 0 5px; /* Giảm margin giữa các nút */
+    cursor: pointer;
+    border: none;
+    color: #fff; /* Màu chữ trên nút */
+    border-radius: 4px; /* Bo góc */
+}
+
+#reset-button {
+    background-color: #f44336; /* Màu đỏ cho nút xóa lựa chọn */
+}
+
+#filter-button {
+    background-color: #4CAF50; /* Màu xanh lá cho nút xác nhận lọc */
+}
+
+#reset-button:hover, #filter-button:hover {
+    opacity: 0.8; /* Hiệu ứng mờ khi hover */
 }

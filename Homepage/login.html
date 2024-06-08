@@ -1,13 +1,19 @@
-<!-- Login -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Đăng Nhập</title>
+    <link rel="shortcut icon" href="img/favicon.png"> <!-- Favicon -->
+    <!-- Thêm liên kết tới Font Awesome cho Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
 <div class="loginform">
-    <div class="left">
-        <img src="" alt="">
-    </div>
-    
-    <div class="right">
-        <h1>Xin chao tinh yeu</h1>
 
-        <from action="#" method="post">
+    <div class="right">
+        <h1>Xin chào bạn!</h1>
+
+        <form action="#" method="post">
             <p>User Name</p>
             <div class="user">
                 <i class="fa-solid fa-user"></i>
@@ -17,16 +23,19 @@
             <p class="password_tag">Password</p>
             <div class="password">
                 <i class="fa-solid fa-lock"></i>
-                <input type="text" name="password" placeholder="Password">
+                <!-- Thay đổi type từ "text" thành "password" -->
+                <input type="password" name="password" placeholder="Password">
             </div>
 
-            <p clas="forget">Forget Password</p>
+            <p class="forget">Forget Password?</p>
 
             <button type="submit">Login</button>
             <div class="Login_Icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-google"></i></a>
             </div>
-        </from> 
+        </form> 
     </div>
 </div>
+</body>
+</html>
