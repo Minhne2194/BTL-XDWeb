@@ -1,0 +1,190 @@
+/* CSS Variables */
+:root {
+    --black-color: #151515;
+    --maroon-color: #A91D3A;
+    --red-color: #C73659;
+    --grey-color: #eeeeee;
+    --text-color: #333333;
+}
+/*----------------------------------------------*/
+
+* {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase; /* Chữ thường */
+    transition: all .2s linear; /* Hiệu ứng đều đặn */
+}
+/*----------------------------------------------*/
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem; /* Khoảng trống từ vùng trên cùng đến vùng hiển thị khi cuộn */
+    scroll-behavior: smooth; /* Hiệu ứng chuyển động cuộn */
+}
+/*----------------------------------------------*/
+
+/* Điều chỉnh màn hình */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.section-p1 {
+    padding: 4rem 8rem;
+}
+.section-m1 {
+    margin: 4rem 0;
+}
+/*----------------------------------------------*/
+
+/* Header */
+.header {
+    position: fixed; /* Cố định */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Chồng lên trên */
+    background: var(--grey-color);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+    /* Tên Shop */
+.name {
+    font-size: 3rem;
+    margin-left: -40px;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+    /* Thanh Bar */
+.header__navbar-list {
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    margin-left: -12rem;
+}
+.header__navbar-item a{
+    font-size: 1.5rem;
+    color: var(--black-color);;
+    margin: 0 2rem;
+}
+.header__navbar-item a:hover{
+    color: var(--red-color);
+}
+
+    /* Navbar Icon */
+.header__icons-list {
+    list-style: none;
+    display: flex;
+}
+.header__icons a {
+    font-size: 2rem;
+    color: var(--black-color);
+    margin-left: 1.5rem;
+}
+.header__icons a:hover {
+    color: var(--red-color);
+}
+/*----------------------------------------------*/
+
+/* Content */
+.container {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 8.8rem;
+    width: 100%;
+    max-width: 100%;
+    height: 1000px;
+    max-height: 100%;
+    border: 2px solid black;
+}
+
+    /* Container Div1 */
+.container__image {
+    border: 5px solid black;
+    margin-top: 4rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+}
+.image-title {
+    margin:2rem 0.5rem;
+    background-color: #A91D3A;
+    border: 1px solid red;
+}
+.image-img {
+    display: flex;
+    flex-direction: column;
+    margin:2rem 0.5rem; 
+    object-fit: contain;
+    border: 1px solid black;
+}
+.img23 {
+    display: flex;
+}
+
+    /* Container Div2 */
+.container__product {
+    border: 5px solid black;
+    margin-top: 4rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+}
+.container__product-sale{
+    margin:2rem 0.5rem;
+    background-color: #A91D3A;
+    border: 1px solid red;
+}
+
+.container__product-best{
+    margin:2rem 0.5rem;
+    background-color: #A91D3A;
+    border: 1px solid red;
+}
+
+    /* Container Div3 */
+.container__text{
+    border: 5px solid black;
+    margin-top: 4rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+}
+.container__text-img {
+    border: 5px solid black;
+    margin-top: 4rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+}
+/*----------------------------------------------*/
+
+/* Featured */
+.featured {
+    margin-top: 2rem;
+    border: 2px solid black;
+}
+/*----------------------------------------------*/
+
+/* Footer */
+.footer {
+    margin-top: 2rem;
+    border: 2px solid black;
+}
+/*----------------------------------------------*/
