@@ -428,7 +428,7 @@ html {
 .featured {
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
+    margin-top: 4rem;
     border: 2px solid black;
     background-color: #f8f8f8;
 }
@@ -460,8 +460,155 @@ html {
 /*----------------------------------------------*/
 
 /* Footer */
-.footer {
-    margin-top: 2rem;
-    border: 2px solid black;
+.container__footer {
+    margin-top: 310px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+        .newletter {
+            display: flex;
+            width: 100%;
+            position: relative;
+            top: 50px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #303035;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
+        }
+
+            .nl-left h1 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+
+            .nl-left h2 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 1rem;
+                opacity: 0.5;
+                letter-spacing: 1px;
+            }
+
+            .nl-right {
+                width: 500px;
+            }
+
+            .nl-right-input {
+                background-color: #ffffff;
+                padding: 5px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: space-between;
+              }
+              .nl-right-input input {
+                border: none;
+                outline: none;
+                background: transparent;
+                width: 80%;
+                padding-left: 10px;
+                font-weight: 600;
+              }
+              .nl-right-input button {
+                background-color: #201e1e;
+                padding: 9px 15px;
+                border-radius: 15px;
+                color: #ffffff;
+                cursor: pointer;
+              }
+              .nl-right-input button:hover {
+                background-color: #3a3939;
+                position: relative;
+              }
+
+              .footer-section {
+                width: 100%;
+                display: flex;
+                color: white;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 100px 40px 40px;
+                background-color: rgb(32, 30, 30);
+            }
+            
+            .footer-section h2 {
+                margin-bottom: 1rem;
+                position: relative;
+            }
+            
+            .footer-section h2::after {
+                content: '';
+                width: 4rem;
+                height: .2rem;
+                background: #e65b00;
+                position: absolute;
+                top: 2.5rem;
+                left: 0;
+            }
+            
+            .footer-section p {
+                transition: all .2s linear;
+                margin-bottom: .6em;
+            }
+            
+            a {
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            .footer-section p:hover {
+                transition: all .2s linear;
+                transform: translateX(4px);
+            }
+            
+            .footer-section a:hover {
+                color: #f46d13;
+            }
+            
+            .footer-item {
+                margin: 1rem;
+            }
+            
+            .footer-item ul {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+            }
+            
+            .footer-item li {
+                margin-right: 1rem;
+            }
+            
+            .social ul li {
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: all .2s linear;
+            }
+            
+            .social ul li:hover {
+                color: #e65b00;
+                transform: scale(1.1);
+                transition: all .2s linear;
+            }
+            
+            @media screen and (max-width: 320px) {
+                .footer-section {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding-left: 2rem;
+                }
+            }
 /*----------------------------------------------*/
