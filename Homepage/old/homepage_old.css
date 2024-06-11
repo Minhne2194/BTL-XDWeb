@@ -1,0 +1,259 @@
+/* Thiết lập cho header */
+#search-bar {
+    /* Điều chỉnh vị trí và padding của thanh tìm kiếm nếu cần */
+    max-width: 100px; /* Thiết lập chiều rộng tối đa */
+    margin: 30px; /* Căn giữa thanh tìm kiếm */
+    padding: 10px;
+}
+
+#search-bar form {
+    display: flex; /* Sử dụng flexbox để căn chỉnh input và button */
+}
+
+#search-query {
+    flex: 1; /* Cho input chiếm đủ không gian */
+    border: 1px solid #cccccc; /* Viền màu sáng, nhẹ nhàng */
+    padding: 5px 15px; /* Padding hợp lý cho input text */
+    border-radius: 5px; /* Góc bo tròn cho input */
+    margin-right: 10px; /* Khoảng cách giữa input và button */
+}
+
+#search-submit {
+    background-color: transparent; /* Nền trong suốt */
+    border: none; /* Loại bỏ viền */
+    padding: 5px; /* Padding cho nút */
+    cursor: pointer; /* Cursor nhấn chuột */
+}
+
+#search-submit img {
+    width: 24px; /* Kích thước icon phù hợp */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+}
+
+@media screen and (max-width: 100px) {
+    #search-bar form {
+        flex-direction: column; /* Xếp chồng lên nhau khi màn hình nhỏ */
+    }
+
+    #search-query {
+        margin-bottom: 10px; /* Khoảng cách khi chuyển sang column */
+    }
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;  /* Loại bỏ các dấu bullet mặc định */
+    display: flex;     /* Tạo flex container */
+    align-items: center; /* Căn giữa các items theo chiều dọc */
+    justify-content: center; /* Nếu bạn muốn căn giữa các items theo chiều ngang */
+}
+
+nav li {
+    font-size: 16px;
+    margin-right: 20px; /* Tạo khoảng cách giữa các menu item */
+}
+
+nav li:last-child {
+    margin-right: 0; /* Hủy bỏ khoảng cách bên phải của item cuối cùng */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Màu sắc cho liên kết. Nên thay đổi theo yêu cầu thiết kế của bạn */
+}
+
+/* Thêm hiệu ứng khi hover vào link để tăng tính tương tác */
+nav a:hover {
+    color: #017bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
+        .header{
+    display: flex;
+    justify-content: space-evenly;
+    color: #e9dfdf;
+    background-color: rgb(225, 225, 238);
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+}
+        .container{
+    display: flex;
+    justify-content: space-evenly;
+    color: #e9dfdf;
+    background-color: rgb(225, 225, 238);
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+}
+#logo-web img {
+    max-width: 100px;  /* Hoặc kích thước tối đa bạn muốn */
+    max-height: 100px; /* Đảm bảo tỷ lệ ảnh vẫn được giữ nguyên */
+    width: auto;       /* Hoặc bạn có thể thiết lập % để nó đáp ứng với div */
+    height: auto;      /* Sẽ tự điều chỉnh theo width để giữ tỷ lệ */
+}
+#search-bar img{
+    max-width: 100px;  /* Hoặc kích thước tối đa bạn muốn */
+    max-height: 100px; /* Đảm bảo tỷ lệ ảnh vẫn được giữ nguyên */
+    width: 10px;       /* Hoặc bạn có thể thiết lập % để nó đáp ứng với div */
+    height: auto;      /* Sẽ tự điều chỉnh theo width để giữ tỷ lệ */
+}
+#cart img{
+    max-width: 50px;  /* Hoặc kích thước tối đa bạn muốn */
+    max-height: 100px; /* Đảm bảo tỷ lệ ảnh vẫn được giữ nguyên */
+    width: 20px;       /* Hoặc bạn có thể thiết lập % để nó đáp ứng với div */
+    height: auto;      /* Sẽ tự điều chỉnh theo width để giữ tỷ lệ */
+}
+#cart a {
+            color: #333; /* Màu của liên kết */
+            text-decoration: none; /* Không gạch chân */
+        }
+
+        #cart a:hover {
+            color: #017bff; /* Màu của liên kết khi hover */
+        }
+/* Cấu hình bố cục cho banner */
+.body-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+        .banner {
+    background: url('https://example.com/banner-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.banner h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+/* Thiết kế cho từng sản phẩm */
+.sp {
+    width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
+    margin: 5px;
+    max-height: fit-content;
+    text-align: center;
+}
+.sp-c {
+    margin: 20px;
+    text-align: center;
+}
+
+.sp img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Đảm bảo ảnh không có khoảng cách phía dưới */
+}
+
+.button-add {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-add button {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+.button-add button:hover {
+    background-color: #555;
+}
+
+.name {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gia {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+footer {
+    background-color: #f3f3f3; /* Màu nền cho footer */
+    padding: 20px; /* Đệm xung quanh nội dung trong footer */
+    font-family: Arial, sans-serif; /* Font chữ sử dụng */
+}
+
+.main-footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Căn các mục trong footer ra hai bên */
+    flex-wrap: wrap; /* Tự động chuyển hàng nếu không đủ chỗ */
+}
+
+.gioi-thieu, .Ttlh {
+    flex-basis: 48%; /* Chiếm khoảng 48% chiều rộng của phần tổng, giúp có khoảng trắng giữa các mục */
+}
+
+.gioi-thieu h4, .Ttlh h4 {
+    color: #333; /* Màu cho tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+.gioi-thieu p, .Ttlh ul {
+    color: #666; /* Màu cho nội dung */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+}
+
+.Ttlh ul {
+    list-style: none; /* Bỏ bullets của list */
+    padding: 0; /* Reset đệm */
+}
+
+.Ttlh ul li {
+    margin-bottom: 5px; /* Khoảng cách giữa các liên kết */
+}
+
+.main-footer--border {
+    border-top: 1px solid #ddd; /* Tạo đường kẻ phân cách */
+    text-align: center; /* Căn giữa nội dung */
+    margin-top: 20px; /* Khoảng cách từ nội dung phía trên */
+    padding-top: 10px; /* Đệm phía trên cho đoạn text */
+}
+
+.main-footer--border a {
+    color: #333; /* Màu cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.main-footer--border a:hover {
+    color: #007bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
+.Ttlh a {
+    color: #333; /* Màu cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+.Ttlh a:hover {
+    color: #007bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
+.name h3 {
+    font-size:16px;
+    font-display:auto;
+}
+.sp {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+}
+
+.sp img {
+    width: 100%; 
+    height: auto; 
+}
+
+.button-add, .sp-c {
+    width: 100%; 
+    text-align: center; 
+}
+

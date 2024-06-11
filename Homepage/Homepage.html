@@ -3,164 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Hiển thị kích thước chuẩn trên thiết bị di động -->
-    <title>Cửa Hàng Giày 2hands</title>
-    <link rel="stylesheet" type="text/css" href="homepage.css">
+
     <!-- Reset CSS and Data and Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./data/css/main.css">
-    <link rel="stylesheet" href="./data/css/base.css">
+    <link rel="stylesheet" href="./data/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img\favicon-32x32.png">
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <title>P2HandA</title> <!-- Tên trang-->
-    <link rel="shortcut icon" href="img\favicon.png"> <!-- Favicon -->
+    <link rel="shortcut icon" href="./data/img/favicon.png"> <!-- Favicon -->
 </head>
-<body>
-    <div class="header">
-        <div class="container">
-            <div id="logo-web">
-                <img src="https://sgweb.vn/wp-content/uploads/2022/12/thiet-ke-logo-shop-giay-18_1584095086.jpg" alt>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="Homepage.html">Trang Chủ</a></li>
-                    <li><a href="spt.html">Sản Phẩm</a></li>
-                    <li><a href="lienhe.html">Liên Hệ</a></li>
 
-                </ul>
-            </nav>
-            <div id="search-bar">
-                <form action="/tim-kiem" method="get">
-                    <input type="text" name="query" id="search-query" placeholder="Tìm kiếm giày" aria-label="Search" required>
-                    <button type="submit" id="search-submit" title="Tìm kiếm"><i class="fas fa-search"></i></button>
-                </form>
-            </div>            
-            <div id="cart">
-                <a href="login.html"><i class="fa-solid fa-user"></i></a>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+<body>
+    <div class="main">
+        <!-- Header -->
+        <header class="header">
+            <!-- <div class="grid"> -->
+                <!-- Tên Shop -->
+                <a href="Homepage.html" class="name">P2HandA</a>
+    
+                <!-- Thanh Bar -->
+                 <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="Homepage.html">Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="sp.html">Sản phẩm</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                 </nav>
+    
+                <!-- Navbar Icon -->
+                 <nav class="header__icons">
+                    <ul class="header__icons-list">
+                        <li class="header__icons-item">
+                            <div class="icons-item">
+                                <i class="fa-solid fa-user fa-2x"></i>
+                                <a href="login.html"><span>Đăng nhập</span></a>
+                            </div>
+                        </li>
+                        </li>
+                        <li class="header__icons-item">
+                            <div class="icons-item">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <div  class="icons-item__text">
+                                <a href="cart.html"><span>Giỏ hàng</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            <!-- </div> -->
+        </header>
+
+        <!-- Content -->
+        <div class="container">
+            <!-- Div1 -->
+            <div class="container__image">
+                <!-- Tiêu đề -->
+                <div class="image-title">
+                    <h1>THANH TOÁN CHUYỂN KHOẢN GIẢM NGAY 10%</h1>
+                </div>
+
+                <!-- Ảnh -->
+                <div class="image-img">
+                    <div class="img1">
+                        <a href="#">
+                            <img src="./data/img/banner/P2HANDA.com.png" alt="anh1">
+                        </a>
+                    </div>
+
+                    <div class="img23">
+                        <div class="img2">
+                            <a href="#">
+                                <div class="img2__info">
+                                    <h1>Adidas</h1>
+                                    <button class="bt-xem">Xem ngay</button>
+                                </div>
+                                <img src="./data/img/banner/image1.jpg" alt="anh2">
+                            </a>
+                        </div>
+
+                        <div class="img3">
+                            <a href="#">
+                                <div class="img3__info">
+                                    <h1>Nike</h1>
+                                    <button class="bt-xem">Xem ngay</button>
+                                </div>
+                                <img src="./data/img/banner/image2.jpg" alt="anh3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Banner -->
+                <div class="image-banner">
+                    <div class="image-banner1">
+                        <a href="#">
+                            <img src="./data/img/banner/banner.png" alt="anh4">
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Div2 -->
+            <div class="container__product">
+                    <!-- Sale -->
+                    <div class="container__product-sale">
+                        <h1>Sale</h1>
+                        <div class="grid">
+                            <!-- Product Sale 1 -->
+                            <div class="card">
+                                 <div class="relative">
+                                     <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                     <div class="badge badge--sale">-70%</div>
+                                     <div class="badge badge--new">New</div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                                    <p>NIKE</p>
+                                    <p class="price--old">1,395,000₫</p>
+                                    <p class="price--new">418,500₫</p>
+                                </div>
+                            </div>
+
+                            <!-- Product Sale 2 -->
+                            <div class="card">
+                                <div class="relative">
+                                    <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                    <div class="badge badge--sale">-70%</div>
+                                    <div class="badge badge--new">New</div>
+                               </div>
+
+                               <div class="mt-4">
+                                   <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                                   <p>NIKE</p>
+                                   <p class="price--old">1,395,000₫</p>
+                                   <p class="price--new">418,500₫</p>
+                               </div>
+                           </div>
+
+                           <!-- Product Sale 3 -->
+                            <div class="card">
+                            <div class="relative">
+                                <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                <div class="badge badge--sale">-70%</div>
+                                <div class="badge badge--new">New</div>
+                           </div>
+
+                           <div class="mt-4">
+                               <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                               <p>NIKE</p>
+                               <p class="price--old">1,395,000₫</p>
+                               <p class="price--new">418,500₫</p>
+                           </div>
+                            </div>
+
+                            <!-- Product Sale 4 -->
+                            <div class="card">
+                                <div class="relative">
+                                    <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                    <div class="badge badge--sale">-70%</div>
+                                    <div class="badge badge--new">New</div>
+                               </div>
+
+                               <div class="mt-4">
+                                   <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                                   <p>NIKE</p>
+                                   <p class="price--old">1,395,000₫</p>
+                                   <p class="price--new">418,500₫</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Best Seller -->
+                    <div class="container__product-best">
+                        <div class="besthome">
+                            <a href="">
+                                <img src="./data/img/producthome/bannerbestseller.jpg" alt="anh">
+                            </a>
+                        </div>
+                        <h1>Best Seller</h1>
+                        <div class="grid">
+                            <!-- Product Sale 1 -->
+                            <div class="card">
+                                 <div class="relative">
+                                     <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                     <div class="badge badge--sale">-70%</div>
+                                     <div class="badge badge--new">New</div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                                    <p>NIKE</p>
+                                    <p class="price--old">1,395,000₫</p>
+                                    <p class="price--new">418,500₫</p>
+                                </div>
+                            </div>
+
+                            <!-- Product Sale 2 -->
+                            <div class="card">
+                                <div class="relative">
+                                    <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                    <div class="badge badge--sale">-70%</div>
+                                    <div class="badge badge--new">New</div>
+                               </div>
+
+                               <div class="mt-4">
+                                   <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                                   <p>NIKE</p>
+                                   <p class="price--old">1,395,000₫</p>
+                                   <p class="price--new">418,500₫</p>
+                               </div>
+                           </div>
+
+                           <!-- Product Sale 3 -->
+                            <div class="card">
+                            <div class="relative">
+                                <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                <div class="badge badge--sale">-70%</div>
+                                <div class="badge badge--new">New</div>
+                           </div>
+
+                           <div class="mt-4">
+                               <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                               <p>NIKE</p>
+                               <p class="price--old">1,395,000₫</p>
+                               <p class="price--new">418,500₫</p>
+                           </div>
+                            </div>
+
+                            <!-- Product Sale 4 -->
+                            <div class="card">
+                                <div class="relative">
+                                    <img src="./data/img/banner/image1.jpg" alt="Air Jordan 1 X Off-White X Retro High OG Chicago">
+                                    <div class="badge badge--sale">-70%</div>
+                                    <div class="badge badge--new">New</div>
+                               </div>
+
+                               <div class="mt-4">
+                                   <h2>Air Jordan 1 X Off-White X Retro High OG Chicago</h2>
+                                   <p>NIKE</p>
+                                   <p class="price--old">1,395,000₫</p>
+                                   <p class="price--new">418,500₫</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="content__container">
+            <!-- Featured -->
+            <div class="featured">
+                <div class="fl1">
+                    <div class="fl1__icon">
+                        <img src="./data/img/featured/accreditation.png" alt="Cam kết chất lượng">
+                    </div>
+                    <div class="fl__text">
+                        <span>Cam kết chất lượng</span>
+                        <p>Cam kết chuẩn mẫu sản phẩm</p>
+                    </div>
+                </div>
+                <div class="fl1">
+                    <div class="fl1__icon">
+                        <img src="./data/img/featured/accreditation.png" alt="Cam kết chất lượng">
+                    </div>
+                    <div class="fl__text">
+                        <span>Cam kết chất lượng</span>
+                        <p>Cam kết chuẩn mẫu sản phẩm</p>
+                    </div>
+                </div>
+                <div class="fl1">
+                    <div class="fl1__icon">
+                        <img src="./data/img/featured/accreditation.png" alt="Cam kết chất lượng">
+                    </div>
+                    <div class="fl__text">
+                        <span>Cam kết chất lượng</span>
+                        <p>Cam kết chuẩn mẫu sản phẩm</p>
+                    </div>
+                </div>
+                <div class="fl1">
+                    <div class="fl1__icon">
+                        <img src="./data/img/featured/accreditation.png" alt="Cam kết chất lượng">
+                    </div>
+                    <div class="fl__text">
+                        <span>Cam kết chất lượng</span>
+                        <p>Cam kết chuẩn mẫu sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer -->
+             <div class="container__footer">
+                <div class="footer">
+                    
+                    <div class="newletter">
+                        <div class="nl-left">
+                            <h1>ĐỪNG BỎ LỠ THÔNG TIN</h1>
+                            <h2>Đăng kí nhận bản tin để không bỏ lỡ thông tin khuyến mãi, luôn nhận được chương trình ưu đãi đặc biệt.</h2>
+                        </div>
+    
+                        <div class="nl-right">
+                            <div class="nl-right-input">
+                                <input type="text" placeholder="Nhập email của bạn" />
+                                <button>Đăng kí</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="footer-section">
+                        <div class="footer-item">
+                            <h2 style="text-align: center;">P2HANDA.COM</h2>
+                            <p style="text-align: center;"><a href=""> Chào mừng đến với Shop Shoes 2hand! Chúng tôi cung cấp giày second-hand chất lượng, đa dạng phong cách, từ thể thao đến thời trang. Hãy khám phá ngay để sở hữu những đôi giày độc đáo với giá cực kỳ hợp lý!</a></p>
+                        </div>
+                        <div class="footer-item">
+                            <h2>Chính sách </h2>
+                            <p><a href=""> Chính sách bảo hành</a></p>
+                            <p><a href=""> Chính sách đổi trả </a></p>
+                            <p><a href=""> Chính sách bảo mật </a></p>
+                            <p><a href=""> Chính sách giao hàng </a></p>
+                            <p><a href=""> Chính sách kiểm hàng </a></p>
+                            <p><a href=""> Hướng dẫn thanh toán </a></p>
+                            <p><a href=""> Hướng dẫn mua hàng </a></p>
+                            <p><a href=""> Kiểm tra đơn hàng </a></p>
+                        </div>
+                        <div class="footer-item">
+                            <h2>PHƯƠNG THỨC THANH TOÁN</h2>
+                            <p><a href=""> Visa </a></p>
+                            <p><a href=""> Master Card </a></p>
+                            <p><a href=""> MOMO </a></p>
+                            <p><a href=""> Cash on Delivery </a></p>
+                        </div>
+                        <div class="footer-item">
+                            <h2>ĐỐI TÁC VẬN CHUYỂN</h2>
+                            <p><a href=""> Giaohangtietkiem </a></p>
+                            <p><a href=""> Giaohangnhanh </a></p>
+                            <p><a href=""> Lalamove </a></p>
+                            <p><a href=""> Nhat tin </a></p>
+                        </div>
+                        <div class="footer-item">
+                            <h2>DANH MỤC</h2>
+                            <p><a href=""> Thương hiệu </a></p>
+                            <p><a href=""> Nam </a></p>
+                            <p><a href=""> Nữ </a></p>
+                            <p><a href=""> Unisex </a></p>
+                            <p><a href=""> Blog </a></p>
+                        </div>
+                        <div class="footer-item social">
+                            <h2> Follow Us </h2>
+                            <ul>
+                                <li> <i class="fa-brands fa-instagram"></i> </li>
+                                <li> <i class="fa-brands fa-square-facebook"></i> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
         </div>
     </div>
-    <div class="banner">
-        <div>
-            <h2>Các sản phẩm nổi bật</h2>
-        </div>
-        <div class = "body-banner">
-            <div class="sp">
-                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
-                <div class="button-add">
-                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
-                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
-                </div>
-                <div class="sp-c">
-                        <h3 class="name">
-                            Adidas Samba OG Black Wonder White IE5836
-                        </h3>
-                </div>
-                <div>	
-                    <p class="gia">2,680,000₫</p>
-                </div>
-            </div>
-            <div class="sp">
-                <img src="//product.hstatic.net/1000383440/product/6ba2a7b4-e965-45c5-83d9-0b8f81f7181a_7ec68eee080b4c10ae6123ecebe38736_master.jpg" alt="PUMA Rebound V6 Low White 392328-03" />           
-                <div class="button-add">
-                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
-                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
-                </div>
-                <div class="sp-c">
-                        <h3 class="name">
-                            PUMA Rebound V6 Low White 392328-03
-                        </h3>
-                </div>
-                <div>	
-                    <p class="gia">1,450,000₫</p>
-                </div>
-            </div>
-            <div class="sp">
-                <img src="//product.hstatic.net/1000383440/product/4a5ce202-b7f6-4ecf-a463-3f0014b91df7_47d945a2447e449e8b828ea3be2de583_master.jpg" alt="Nike Air Jordan 1 Low SE Vintage Panda (WMNS) FB9893-101" />           
-                <div class="button-add">
-                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
-                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
-                </div>
-                <div class="sp-c">
-                        <h3 class="name">
-                            Nike Air Jordan 1 Low SE Vintage Panda 
-                        </h3>
-                </div>
-                <div>	
-                    <p class="gia">2,750,000₫</p>
-                </div>
-            </div>
-            <div class="sp">
-                <img src="//product.hstatic.net/1000383440/product/b0b5bd46-176c-4b13-946c-5fffb48cd878_9a921920c5ec4c1ea3e0e6b9d902ebfb_master.jpg" alt="Adidas Spezial Handball Aluminium Core Black Cloud White IF6562" />           
-                <div class="button-add">
-                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
-                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
-                </div>
-                <div class="sp-c">
-                        <h3 class="name">
-                            Adidas SHA Core BCW 
-                        </h3>
-                </div>
-                <div>	
-                    <p class="gia">2,450,000₫</p>
-                </div>
-            </div>
-            <div class="sp">
-                <img src="https://product.hstatic.net/1000383440/product/75838285-fe87-4811-a51f-b64e58adf403_412e542c268f4a38a279a4b2a3887b3f_master.jpg" alt="Puma Court Ultra Vapor Gray White 389368-09" />           
-                <div class="button-add">
-                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
-                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
-                </div>
-                <div class="sp-c">
-                        <h3 class="name">
-                            Puma Court Ultra Vapor Gray White 
-                        </h3>
-                </div>
-                <div>	
-                    <p class="gia">1,450,000₫</p>
-                </div>
-            </div>
-            <div class="sp">
-                <img src="https://product.hstatic.net/1000383440/product/50a909a8-a526-4155-b459-459a851ee8a0_7f5dba403cb04c6cb019b0e95470a57a_master.jpg" alt="Nike Air Force 1 Low Hoops DH7440-100" />           
-                <div class="button-add">
-                    <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
-                    <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
-                </div>
-                <div class="sp-c">
-                        <h3 class="name">
-                            Nike Air Force 1 Low Hoops 
-                        </h3>
-                </div>
-                <div>	
-                    <p class="gia">1,950,000₫</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class ="main-footer-bottom">
-            <div class ="gioi-thieu">
-                <h4>Giới thiệu</h4>
-                <p>2hands Store mong muốn đem đến những trải nghiệm và dịch vụ tốt nhất cho khách hàng về các sản phẩm</p>
-            </div>
-            <div class ="Ttlh">
-                <h4>Thông tin liên hệ</h4>
-                <ul>
-                    <li>Điện thoại: 091199261</li>
-                    <li>Facebook:<a href="https://www.facebook.com">Facebook.com</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="main-footer--border">
-            <p>Copyright © 2024 <a href="Homepage.html">2hands Store</a></p>
-        </div>
-    </footer>
+
+
 </body>
 </html>
-

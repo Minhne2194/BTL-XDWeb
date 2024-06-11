@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cửa Hàng Giày 2hands</title>
+    <link rel="stylesheet" type="text/css" href="homepage_old.css">
+    <link rel="stylesheet" type="text/css" href="spt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img\favicon-32x32.png">
+    <link rel="shortcut icon" href="img\favicon.png"> <!-- Favicon -->
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div id="logo-web">
+                <img src="https://sgweb.vn/wp-content/uploads/2022/12/thiet-ke-logo-shop-giay-18_1584095086.jpg" alt>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="Homepage.html">Trang Chủ</a></li>
+                    <li><a href="spt.html">Sản Phẩm</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div id="search-bar">
+                <form action="search.html" method="get">
+                    <input type="text" name="query" id="search-query" placeholder="Tìm kiếm giày" aria-label="Search">
+                    <button type="submit" id="search-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div id="cart">
+                <a href="account.html"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <a href="Homepage.html" alt >Trang Chủ</a> / <a href="spt.html">Trang sản phẩm</a>
+    </nav>
+    <div id = "main">
+        <div id="loc">
+            <div id="thuong-hieu">
+                <span>Thương hiệu</span>
+                <ul>
+                    <li><input type="checkbox" id="nike" name="brand" value="Nike"><label for="nike">Nike</label></li>
+                    <li><input type="checkbox" id="adidas" name="brand" value="Adidas"><label for="adidas">Adidas</label></li>
+                    <li><input type="checkbox" id="mlb" name="brand" value="MLB"><label for="mlb">MLB</label></li>
+                    <li><input type="checkbox" id="puma" name="brand" value="Puma"><label for="puma">PUMA</label></li>
+                    <li><input type="checkbox" id="newbalance" name="brand" value="New Balance"><label for="newbalance">NEW BALANCE</label></li>
+                </ul>
+            </div>
+            <div id="gia-san-pham">
+                <span>Giá sản phẩm</span>
+                <ul>
+                    <li><input type="checkbox" id="duoi-1tr" name="price" value="Duoi 1tr"><label for="duoi-1tr">Dưới 1.000.000₫</label></li>
+                    <li><input type="checkbox" id="1tr-2tr" name="price" value="1tr-2tr"><label for="1tr-2tr">1.000.000₫-2.000.000₫</label></li>
+                    <li><input type="checkbox" id="2tr-3.5tr" name="price" value="2tr-3.5tr"><label for="2tr-3.5tr">2.000.000₫-3.500.000₫</label></li>
+                    <li><input type="checkbox" id="3.5tr-5tr" name="price" value="3.5tr-5tr"><label for="3.5tr-5tr">3.500.000₫-5.000.000₫</label></li>
+                    <li><input type="checkbox" id="tren-5tr" name="price" value="Tren 5tr"><label for="tren-5tr">Trên 5.000.000₫</label></li>
+                </ul>
+            </div>
+            <div id="kich-thuoc">
+                <span>Kích thước</span>
+                <ul>
+                    <li><input type="checkbox" id="size35" name="size" value="35"><label for="size35">35</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="36"><label for="size36">36</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="37"><label for="size37">37</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="38"><label for="size38">38</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="39"><label for="size39">39</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="40"><label for="size40">40</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="41"><label for="size41">41</label></li>
+                    <li><input type="checkbox" id="size36" name="size" value="42"><label for="size42">42</label></li>
+                    
+                </ul>
+            </div>
+            <div id="filter-actions">
+                <button type="button" id="reset-button">Xóa lựa chọn</button>
+                <button type="button" id="filter-button">Xác nhận lọc</button>
+            </div>
+            
+        </div>
+        <div class="banner">
+            <div>
+                <h2>Các sản phẩm</h2>
+            </div>
+            <div class = "body-banner">
+                <div class="sp">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78d7cfcb3077424fa15c371399a5f110_9366/SAMBA_OG_W_Black_IE5836_01_standard.jpg" alt="Adidas Samba OG Black Wonder White IE5836" />           
+                    <div class="button-add">
+                        <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                        <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="sp-c">
+                            <h3 class="name">
+                                Adidas Samba OG Black Wonder White IE5836
+                            </h3>
+                    </div>
+                    <div>	
+                        <p class="gia">2,680,000₫</p>
+                    </div>
+                </div>
+                <div class="sp">
+                    <img src="//product.hstatic.net/1000383440/product/6ba2a7b4-e965-45c5-83d9-0b8f81f7181a_7ec68eee080b4c10ae6123ecebe38736_master.jpg" alt="PUMA Rebound V6 Low White 392328-03" />           
+                    <div class="button-add">
+                        <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                        <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="sp-c">
+                            <h3 class="name">
+                                PUMA Rebound V6 Low White 392328-03
+                            </h3>
+                    </div>
+                    <div>	
+                        <p class="gia">1,450,000₫</p>
+                    </div>
+                </div>
+                <div class="sp">
+                    <img src="//product.hstatic.net/1000383440/product/4a5ce202-b7f6-4ecf-a463-3f0014b91df7_47d945a2447e449e8b828ea3be2de583_master.jpg" alt="Nike Air Jordan 1 Low SE Vintage Panda (WMNS) FB9893-101" />           
+                    <div class="button-add">
+                        <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                        <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="sp-c">
+                            <h3 class="name">
+                                Nike Air Jordan 1 Low SE Vintage Panda (WMNS) FB9893-101
+                            </h3>
+                    </div>
+                    <div>	
+                        <p class="gia">2,750,000₫</p>
+                    </div>
+                </div>
+                <div class="sp">
+                    <img src="//product.hstatic.net/1000383440/product/b0b5bd46-176c-4b13-946c-5fffb48cd878_9a921920c5ec4c1ea3e0e6b9d902ebfb_master.jpg" alt="Adidas Spezial Handball Aluminium Core Black Cloud White IF6562" />           
+                    <div class="button-add">
+                        <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                        <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="sp-c">
+                            <h3 class="name">
+                                Adidas Spezial HACB White IF6562
+                            </h3>
+                    </div>
+                    <div>	
+                        <p class="gia">2,450,000₫</p>
+                    </div>
+                </div>
+                <div class="sp">
+                    <img src="https://product.hstatic.net/1000383440/product/75838285-fe87-4811-a51f-b64e58adf403_412e542c268f4a38a279a4b2a3887b3f_master.jpg" alt="Puma Court Ultra Vapor Gray White 389368-09" />           
+                    <div class="button-add">
+                        <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                        <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="sp-c">
+                            <h3 class="name">
+                                Puma Court Ultra Vapor Gray White 389368-09
+                            </h3>
+                    </div>
+                    <div>	
+                        <p class="gia">1,450,000₫</p>
+                    </div>
+                </div>
+                <div class="sp">
+                    <img src="https://product.hstatic.net/1000383440/product/50a909a8-a526-4155-b459-459a851ee8a0_7f5dba403cb04c6cb019b0e95470a57a_master.jpg" alt="Nike Air Force 1 Low Hoops DH7440-100" />           
+                    <div class="button-add">
+                        <button type="submit" title="Mua ngay" class="action"">Mua ngay</button>
+                        <button type="submit" title="Thêm vào giỏ" class="action add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                    <div class="sp-c">
+                            <h3 class="name">
+                                Nike Air Force 1 Low Hoops DH7440-100
+                            </h3>
+                    </div>
+                    <div>	
+                        <p class="gia">1,950,000₫</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    <footer>
+        <div class ="main-footer-bottom">
+            <div class ="gioi-thieu">
+                <h4>Giới thiệu</h4>
+                <p>2hands Store mong muốn đem đến những trải nghiệm và dịch vụ tốt nhất cho khách hàng về các sản phẩm</p>
+            </div>
+            <div class ="Ttlh">
+                <h4>Thông tin liên hệ</h4>
+                <ul>
+                    <li>Dien thoai: 091199261</li>
+                    <li>Facebook: https://www.facebook.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-footer--border">
+            <p>Copyright © 2024 <a href="Homepage.html"> 2hands Store</a></p>
+        </div>
+    </footer>
+</body>
+</html>

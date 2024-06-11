@@ -82,3 +82,19 @@
 .loginform .right .Login_Icons i {
     color: blueviolet; /* Màu cho icons */
 }
+.back-home {
+    display: inline-block; /* hoặc block tùy thuộc vào cách bạn muốn hiển thị */
+    margin-top: 20px; /* Khoảng cách từ nút trên đến nội dung phía trên */
+    padding: 10px 20px; /* Điều chỉnh kích thước nút */
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    border-radius: 5px; /* Làm dịu các góc */
+    text-align: center; /* Căn giữa chữ */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng khi hover */
+}
+
+.back-home:hover {
+    background-color: #45a049; /* Thay đổi màu khi hover */
+    color: #fff; /* Thay đổi màu chữ khi hover */
+}

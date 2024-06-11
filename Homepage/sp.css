@@ -1,0 +1,206 @@
+.body-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+        .banner {
+    background: url('https://example.com/banner-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.banner h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+/* Thiết kế cho từng sản phẩm */
+.sp {
+    width: calc(33.333% - 40px); /* Điều chỉnh mức độ trừ dựa trên kích thước và số lượng padding/margin bạn muốn */
+    margin: 5px;
+    max-height: fit-content;
+    text-align: center;
+}
+.sp-c {
+    margin: 20px;
+    text-align: center;
+}
+
+.sp img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Đảm bảo ảnh không có khoảng cách phía dưới */
+}
+
+.button-add {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-add button {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+.button-add button:hover {
+    background-color: #555;
+}
+
+.name {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gia {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+
+.gioi-thieu, .Ttlh {
+    flex-basis: 48%; /* Chiếm khoảng 48% chiều rộng của phần tổng, giúp có khoảng trắng giữa các mục */
+}
+
+.gioi-thieu h4, .Ttlh h4 {
+    color: #333; /* Màu cho tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+.gioi-thieu p, .Ttlh ul {
+    color: #666; /* Màu cho nội dung */
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+}
+
+.Ttlh ul {
+    list-style: none; /* Bỏ bullets của list */
+    padding: 0; /* Reset đệm */
+}
+
+.Ttlh ul li {
+    margin-bottom: 5px; /* Khoảng cách giữa các liên kết */
+}
+.Ttlh a {
+    color: #333; /* Màu cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+.Ttlh a:hover {
+    color: #007bff; /* Thay đổi màu sắc khi hover, thay đổi màu này theo thiết kế của bạn */
+}
+.name h3 {
+    font-size:16px;
+    font-display:auto;
+}
+.sp {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+}
+
+.sp img {
+    width: 100%; 
+    height: auto; 
+}
+
+.button-add, .sp-c {
+    width: 100%; 
+    text-align: center; 
+}
+.main1 {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.main1-spt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#loc {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 14px; /* Giảm kích thước font chung */
+}
+
+#loc div {
+    margin-bottom: 15px;
+}
+
+#loc span {
+    font-size: 16px; /* Giảm kích thước font của tiêu đề */
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+#loc ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Giảm margin */
+}
+
+#loc li {
+    background-color: #f0f0f0;
+    margin: 3px 0; /* Giảm margin */
+    padding: 6px; /* Giảm padding */
+    border-radius: 4px;
+}
+
+#loc li:hover {
+    background-color: #e0e0e0;
+}
+
+#loc label, #loc input[type="checkbox"]+label, #loc input[type="radio"]+label {
+    cursor: pointer;
+}
+
+#loc input[type="checkbox"]:checked+label, #loc input[type="radio"]:checked+label {
+    color: #007BFF; /* Màu xanh dương cho text khi chọn */
+    font-weight: bold; /* Làm đậm chữ */
+}
+
+#filter-actions {
+    text-align: center; /* Căn giữa các nút */
+    padding-top: 15px; /* Giảm padding-top */
+    display: flex;
+    justify-content: center; /* Đảm bảo các nút được căn giữa */
+    gap: 10px; /* Thêm khoảng cách giữa các nút */
+}
+
+button {
+    padding: 8px 12px; /* Giảm padding */
+    font-size: 14px; /* Giảm kích thước font */
+    margin: 0 5px; /* Giảm margin giữa các nút */
+    cursor: pointer;
+    border: none;
+    color: #fff; /* Màu chữ trên nút */
+    border-radius: 4px; /* Bo góc */
+}
+
+#reset-button {
+    background-color: #f44336; /* Màu đỏ cho nút xóa lựa chọn */
+}
+
+#filter-button {
+    background-color: #4CAF50; /* Màu xanh lá cho nút xác nhận lọc */
+}
+
+#reset-button:hover, #filter-button:hover {
+    opacity: 0.8; /* Hiệu ứng mờ khi hover */
+}
